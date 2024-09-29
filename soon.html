@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exempli</title>
+    <style>
+        body {background-color: #eee; color: #111; font-family: Arial, sans-serif; margin: 0; padding: 0;}
+        header, header a, footer {color: #000;}
+        footer, div {background-color: #fff;}
+        header {padding: 3em 0 1em; text-align: center;}
+        main {padding: 20px;}
+        footer {box-shadow: 2px 2px 2px 7px rgba(0,0,0,.04); text-align: center; padding: .3em 0; position: fixed; width: 100%; bottom: 0;}
+        nav {text-align: center; margin: 30px 0;}
+        div {box-shadow: 7px 9px 7px 4px rgba(0,0,0,.02); width: 700px; margin: 1em auto; padding: 3em; border-radius: .9em;}
+        nav a, div p a:hover {margin: 0 15px; color: #333;}
+        nav a:hover, div p a {color: #777;}
+        a, a:hover {text-decoration: none; transition: .5s;}
+        @media (max-width: 840px) {div {width: auto;}}
+        @media (prefers-color-scheme: dark) {
+            body {background-color: #111; color: #eee;}
+            header, header a, footer {color: #fff;}
+            footer, div {background-color: #000;}
+            footer {box-shadow: 2px 2px 2px 7px rgba(50,50,50,.1);}
+            div {box-shadow: 7px 9px 7px 4px rgba(50,50,50,.04);}
+            nav a, div p a:hover {color: #ddd;}
+            nav a:hover, div p a {color: #888;}
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1><a href=".">Exempli</a></h1>
+</header>
+<nav>
+    <a href="/about">About</a>
+    <a href="/story">Story</a>
+    <a href="/redirect">Redirect</a>
+    <a href="/soon">Soon</a>
+</nav>
+<main>
+    <div>
+        <h2>Coming Soon</h2>
+        <p>Exempli will be available soon. Stay tuned!</p>
+        <p><br /><a href="/">Go to main ➜</a></p>
+    </div>
+</main>
+<footer>
+    <p>&copy; <span id="year"></span> Exempli. All rights reserved.</p>
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    alert('Coming Soon!');
+</script>
+</body>
+</html>

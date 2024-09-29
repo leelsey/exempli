@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exempli</title>
+    <style>
+        body {background-color: #eee; color: #111; font-family: Arial, sans-serif; margin: 0; padding: 0;}
+        header, header a, footer {color: #000;}
+        footer, div {background-color: #fff;}
+        header {padding: 3em 0 1em; text-align: center;}
+        main {padding: 20px;}
+        footer {box-shadow: 2px 2px 2px 7px rgba(0,0,0,.04); text-align: center; padding: .3em 0; position: fixed; width: 100%; bottom: 0;}
+        nav {text-align: center; margin: 30px 0;}
+        div {box-shadow: 7px 9px 7px 4px rgba(0,0,0,.02); width: 700px; margin: 1em auto; margin-bottom: 7em; padding: 3em; border-radius: .9em;}
+        nav a, div p a:hover {margin: 0 15px; color: #333;}
+        nav a:hover, div p a {color: #777;}
+        a, a:hover, button, button:hover {text-decoration: none; transition: .5s;}
+        button {background-color: #ddd; color: #333; width: 100%; padding: .8em 1em; border-radius: .7em; border: none; cursor: pointer;}
+        button:hover {background-color: #ccc;}
+        img {width: 100%; height: auto; margin: 1em 0; border-radius: .7em;}
+        @media (max-width: 840px) {div {width: auto;}}
+        @media (prefers-color-scheme: dark) {
+            body {background-color: #111; color: #eee;}
+            header, header a, footer {color: #fff;}
+            footer, div {background-color: #000;}
+            footer {box-shadow: 2px 2px 2px 7px rgba(50,50,50,.1);}
+            div {box-shadow: 7px 9px 7px 4px rgba(50,50,50,.04);}
+            nav a, div p a:hover {color: #ddd;}
+            nav a:hover, div p a {color: #888;}
+            button {background-color: #222; color: #ddd;}
+            button:hover {background-color: #333;}
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1><a href="/">Exempli</a></h1>
+</header>
+<nav>
+    <a href="/about">About</a>
+    <a href="/story">Story</a>
+    <a href="/redirect">Redirect</a>
+    <a href="/soon">Soon</a>
+</nav>
+<main>
+    <div>
+        <h2>About Exempli</h2>  
+        <p>Exempli is a simple, illustrative website designed for demonstration purposes. Whether you are a developer, designer, or just exploring, this site serves as a flexible platform to showcase basic web features and test various elements in a safe environment.</p>
+        <img src="/picture.jpg" />
+        <a href="/download" download="download.txt">
+            <button type="button"><strong>Download Exempli Text File</strong></button>
+        </a>
+        <p><br /></p>
+        <h3>Our Purpose</h3>
+        <p>The primary purpose of Exempli is to offer a placeholder site that can be used in web design, testing, and educational materials. It reflects the simplicity and versatility needed for demonstrating layouts, links, and content, while remaining neutral and easy to adapt for various needs.</p>
+        <h3>What We Offer</h3>
+        <ul>
+            <li><strong>Testing Environment</strong>: A safe, static website where you can test web-based features without affecting live applications.</li>
+            <li><strong>Placeholder Content</strong>: Ready-to-use placeholder text, images, and basic functionality that can be customized as needed.</li>
+            <li><strong>Universal Example</strong>: Ideal for presentations, tutorials, and documentation, serving as a neutral, no-frills example site.</li>
+        </ul>
+        <h3>Our Vision</h3>
+        <p>Exempli is designed to be the go-to resource for professionals and learners alike who need a blank slate to illustrate web principles and functionality. Our goal is to remain a simple, adaptable platform for demonstrating the essentials of web design and development.</p>
+        <p><br /><a href="/">Go to main ➜</a></p>
+    </div>
+</main>
+<footer>
+    <p>&copy; <span id="year"></span> Exempli. All rights reserved.</p>
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
